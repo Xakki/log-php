@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\storage;
+namespace Xakki\Log\Php\storage;
 
 use Exception;
 use Generator;
-use Xakki\PhpErrorCatcher\dto\HttpData;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\dto\HttpData;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\Tools;
 
 /**
  * @method string getLogPath()
@@ -159,7 +159,7 @@ class FileStorage extends BaseStorage
 
     protected function toString(mixed $data): string
     {
-        return str_replace(PHP_EOL, '\\n', \Xakki\PhpErrorCatcher\Tools::safeJsonEncode($data, JSON_UNESCAPED_UNICODE));
+        return str_replace(PHP_EOL, '\\n', \Xakki\Log\Php\Tools::safeJsonEncode($data, JSON_UNESCAPED_UNICODE));
     }
 
     public function checkIsBackUp(string $file): bool

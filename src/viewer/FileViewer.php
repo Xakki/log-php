@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\viewer;
+namespace Xakki\Log\Php\viewer;
 
 use Exception;
 use Generator;
-use Xakki\PhpErrorCatcher\dto\HttpData;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\storage\FileStorage;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\dto\HttpData;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\storage\FileStorage;
+use Xakki\Log\Php\Tools;
 
 /**
  * @method mixed[] getErrorListView()

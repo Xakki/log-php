@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\storage;
+namespace Xakki\Log\Php\storage;
 
 use DateTime;
 use DateTimeZone;
-use Xakki\PhpErrorCatcher\Base;
-use Xakki\PhpErrorCatcher\dto\HttpData;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\Base;
+use Xakki\Log\Php\dto\HttpData;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\Tools;
 
 /**
  * @method string getChannel()

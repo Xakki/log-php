@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\storage;
+namespace Xakki\Log\Php\storage;
 
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\Tools;
 
 /**
  * Writes logs to STDOUT/STDERR in a format compatible with Monolog

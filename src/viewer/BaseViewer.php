@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\viewer;
+namespace Xakki\Log\Php\viewer;
 
-use Xakki\PhpErrorCatcher\Base;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\Base;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\Tools;
 
 /**
  * @method string getInitGetKey()

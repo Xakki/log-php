@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\plugin;
+namespace Xakki\Log\Php\plugin;
 
-use Xakki\PhpErrorCatcher\Base;
+use Xakki\Log\Php\Base;
 
 abstract class BasePlugin extends Base
 {

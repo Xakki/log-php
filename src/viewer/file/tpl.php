@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\Tools;
-use Xakki\PhpErrorCatcher\viewer\FileViewer;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\Tools;
+use Xakki\Log\Php\viewer\FileViewer;
 
 /**
  * @var string $file

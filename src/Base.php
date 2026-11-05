@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher;
+namespace Xakki\Log\Php;
 
 /**
  * @method PhpErrorCatcher getOwner()

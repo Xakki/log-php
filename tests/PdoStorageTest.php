@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\Tests;
+namespace Xakki\Log\Php\Tests;
 
 use PDO;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\storage\PdoStorage;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\storage\PdoStorage;
 
 class PdoStorageTest extends TestCase
 {

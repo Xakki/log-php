@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\Tests;
+namespace Xakki\Log\Php\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\Tools;
 
 /**
  * Basic coverage of the Tools helpers (the class had no tests at all before).

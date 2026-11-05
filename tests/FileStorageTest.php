@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\Tests;
+namespace Xakki\Log\Php\Tests;
 
 use FilesystemIterator;
 use PHPUnit\Framework\TestCase;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use ReflectionClass;
-use Xakki\PhpErrorCatcher\dto\HttpData;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\storage\FileStorage;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\dto\HttpData;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\storage\FileStorage;
+use Xakki\Log\Php\Tools;
 
 /**
  * Covers the main storage: write() accumulates logs in a temp file,

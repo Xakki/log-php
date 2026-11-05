@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\contract;
+namespace Xakki\Log\Php\contract;
 
 interface CacheInterface
 {

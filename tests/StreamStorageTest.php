@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\Tests;
+namespace Xakki\Log\Php\Tests;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\storage\StreamStorage;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\storage\StreamStorage;
 
 class StreamStorageTest extends TestCase
 {

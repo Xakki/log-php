@@ -1,8 +1,8 @@
 # PHPErrorCatcher — Claude guide
 
-PHP 8.3+ library (`xakki/phperrorcatcher`, PSR-3) that catches and logs all PHP & JS errors to pluggable storage backends. GPL-3.0-or-later. Pure library — there is no app to "run"; exercise it through tests and `example/test.php`.
+PHP 8.3+ library (`xakki/log-php`, PSR-3) that catches and logs all PHP & JS errors to pluggable storage backends. GPL-3.0-or-later. Pure library — there is no app to "run"; exercise it through tests and `example/test.php`.
 
-## Architecture (`src/`, PSR-4 `Xakki\PhpErrorCatcher\`)
+## Architecture (`src/`, PSR-4 `Xakki\Log\Php\`)
 
 - `PhpErrorCatcher.php` — entry point; registers handlers, dispatches errors.
 - `Base.php`, `Tools.php` — shared base + helpers.
@@ -13,7 +13,7 @@ PHP 8.3+ library (`xakki/phperrorcatcher`, PSR-3) that catches and logs all PHP 
 - `connector/` — framework bridges (e.g. `YiiLogger`).
 - `contract/` — interfaces (`CacheInterface`).
 
-Tests live in `tests/` (PSR-4 `Xakki\PhpErrorCatcher\Tests\`, PHPUnit 12).
+Tests live in `tests/` (PSR-4 `Xakki\Log\Php\Tests\`, PHPUnit 12).
 
 ## Commands — all via `make`
 

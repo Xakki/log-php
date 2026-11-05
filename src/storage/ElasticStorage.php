@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\storage;
+namespace Xakki\Log\Php\storage;
 
 use Generator;
-use Xakki\PhpErrorCatcher\dto\LogData;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\dto\LogData;
+use Xakki\Log\Php\PhpErrorCatcher;
+use Xakki\Log\Php\Tools;
 
 class ElasticStorage extends BaseStorage
 {

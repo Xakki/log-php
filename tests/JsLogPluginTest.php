@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\Tests;
+namespace Xakki\Log\Php\Tests;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Xakki\PhpErrorCatcher\plugin\JsLogPlugin;
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
+use Xakki\Log\Php\plugin\JsLogPlugin;
+use Xakki\Log\Php\PhpErrorCatcher;
 
 /**
  * Covers JsLogPlugin input hardening (POST only, required fields m/u/r, length
@@ -64,7 +64,7 @@ class JsLogPluginTest extends TestCase
 
     private function lastMessage(): ?string
     {
-        /** @var array<string, \Xakki\PhpErrorCatcher\dto\LogData> $logData */
+        /** @var array<string, \Xakki\Log\Php\dto\LogData> $logData */
         $logData = $this->ref->getProperty('logData')->getValue($this->owner);
         if (!$logData) {
             return null;
@@ -75,7 +75,7 @@ class JsLogPluginTest extends TestCase
     /** @return array<string, mixed> */
     private function lastFields(): array
     {
-        /** @var array<string, \Xakki\PhpErrorCatcher\dto\LogData> $logData */
+        /** @var array<string, \Xakki\Log\Php\dto\LogData> $logData */
         $logData = $this->ref->getProperty('logData')->getValue($this->owner);
         if (!$logData) {
             return [];

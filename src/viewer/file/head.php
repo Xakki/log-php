@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * @var \Xakki\PhpErrorCatcher\viewer\FileViewer $this
+ * @var \Xakki\Log\Php\viewer\FileViewer $this
  */
 ?>
 <style>

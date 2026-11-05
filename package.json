@@ -1,7 +1,7 @@
 {
-  "name": "phperrorcatcher",
+  "name": "log-php",
   "description": "Logger all error in file for PHP",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "keywords": [
     "php",
     "error",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xakki/phperrorcatcher.git"
+    "url": "https://github.com/Xakki/log-php.git"
   },
   "bugs": {
-    "url": "https://github.com/xakki/phperrorcatcher/issues"
+    "url": "https://github.com/Xakki/log-php/issues"
   },
   "license": "GPL-3.0-or-later",
   "files": [

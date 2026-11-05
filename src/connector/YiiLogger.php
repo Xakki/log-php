@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\connector;
+namespace Xakki\Log\Php\connector;
 
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
+use Xakki\Log\Php\PhpErrorCatcher;
 use yii\log\Logger;
 
 class YiiLogger extends Logger

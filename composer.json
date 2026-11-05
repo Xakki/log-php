@@ -1,6 +1,6 @@
 {
-  "name": "xakki/phperrorcatcher",
-  "version": "0.8.4",
+  "name": "xakki/log-php",
+  "version": "0.8.5",
   "description": "PHP Logger - Monolog/PSR compatible",
   "type": "library",
   "minimum-stability": "dev",
@@ -12,9 +12,9 @@
       "email": "git@xakki.ru"
     }
   ],
-  "homepage": "https://xakki.github.io/phperrorcatcher/",
+  "homepage": "https://xakki.github.io/log-php/",
   "support": {
-    "issues": "https://github.com/xakki/phperrorcatcher/issues"
+    "issues": "https://github.com/Xakki/log-php/issues"
   },
   "require": {
     "php": "^8.3",
@@ -34,12 +34,12 @@
   },
   "autoload": {
     "psr-4": {
-        "Xakki\\PhpErrorCatcher\\": "src/"
+        "Xakki\\Log\\Php\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-        "Xakki\\PhpErrorCatcher\\Tests\\": "tests/"
+        "Xakki\\Log\\Php\\Tests\\": "tests/"
     }
   },
   "config": {

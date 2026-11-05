@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.5] - 2026-11-05
+
+### Changed
+
+- **BC: Composer package renamed** `xakki/phperrorcatcher` → `xakki/log-php`; the repository moved to
+  `Xakki/log-php`.
+- **BC: PHP namespace renamed** `Xakki\PhpErrorCatcher` → `Xakki\Log\Php` (class names unchanged,
+  e.g. `Xakki\Log\Php\PhpErrorCatcher`). Update `use` statements and `composer.json`.
+- README: links to the sibling libraries (log-laravel, log-symfony, log-python, log-fluent).
+- Trace-exclude list also skips `log-php` vendor frames; `PhpErrorCatcher::VERSION` synced with the package version.
+- Dependencies updated; CI matrix PHP 8.3 / 8.4 / 8.5.
+
 ## [0.8.4] - 2026-06-12
 
 ### Changed

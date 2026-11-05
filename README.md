@@ -1,15 +1,15 @@
-# PHPErrorCatcher
+# log-php (PHPErrorCatcher)
 
 Logger for all PHP & JS errors (PSR-3), with pluggable storage backends.
 Requires **PHP 8.3+**. Full runnable example:
-[`example/test.php`](https://github.com/Xakki/PHPErrorCatcher/blob/master/example/test.php).
+[`example/test.php`](https://github.com/Xakki/log-php/blob/master/example/test.php).
 
-📖 **[Documentation site](https://xakki.github.io/PHPErrorCatcher/)**
+📖 **[Documentation site](https://xakki.github.io/log-php/)**
 
 ## Install
 
 ```bash
-composer require xakki/phperrorcatcher
+composer require xakki/log-php
 ```
 
 ## Init
@@ -19,7 +19,7 @@ error/exception/shutdown handlers and sets `static::$obj` (accessible as a
 singleton via `PhpErrorCatcher::init()` for legacy code):
 
 ```php
-use Xakki\PhpErrorCatcher\PhpErrorCatcher;
+use Xakki\Log\Php\PhpErrorCatcher;
 
 require_once 'vendor/autoload.php';
 
@@ -99,10 +99,9 @@ Then open the entry point with that key as a query parameter, e.g.
 
 ## Related projects
 
-- [**FluentLog**](https://github.com/Xakki/FluentLog) (`xakki/fluent-log`) —
-  drop-in fluent-bit config that ships Docker container logs and on-disk log
-  files to Graylog over GELF, and exposes fluent-bit metrics to Prometheus.
-- [**LaraLog**](https://github.com/Xakki/LaraLog) (`xakki/laralog`) —
-  structured production logging for Laravel: a drop-in `LogManager` with custom
-  drivers, formatters and Monolog processors that enrich and safeguard every
-  log record.
+Sibling logging libraries sharing one field contract ([Logging Rules](https://github.com/Xakki/log-laravel/blob/main/docs/LoggingRules.md)):
+
+* [log-laravel](https://github.com/Xakki/log-laravel) — `xakki/log-laravel`. Laravel / Monolog: custom `LogManager`, processors, redaction, SQL and queue logging.
+* [log-symfony](https://github.com/Xakki/log-symfony) — `xakki/log-symfony`. PSR-3 / Symfony / Monolog 3: context enrichment, type coercion, redaction.
+* [log-python](https://github.com/Xakki/log-python) — `xakki-log-python` (PyPI). Python: structured JSON logging with the same field/type contract.
+* [log-fluent](https://github.com/Xakki/log-fluent) — `xakki/log-fluent`. Fluent Bit config bundle that ships these logs to Graylog (GELF) and Prometheus.

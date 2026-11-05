@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\dto;
+namespace Xakki\Log\Php\dto;
 
 use Stringable;
-use Xakki\PhpErrorCatcher\Tools;
+use Xakki\Log\Php\Tools;
 
 class LogData extends AbstractData implements Stringable
 {

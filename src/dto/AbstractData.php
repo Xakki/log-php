@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher\dto;
+namespace Xakki\Log\Php\dto;
 
 class AbstractData
 {

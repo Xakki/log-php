@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher;
+namespace Xakki\Log\Php;
 
 use DateTime;
 use Exception;
 use Generator;
 use Psr\Log\LoggerInterface;
 use Throwable;
-use Xakki\PhpErrorCatcher\contract\CacheInterface;
-use Xakki\PhpErrorCatcher\dto\LogData;
+use Xakki\Log\Php\contract\CacheInterface;
+use Xakki\Log\Php\dto\LogData;
 
 use function error_clear_last;
 
@@ -19,7 +19,7 @@ use const STDOUT;
 
 class PhpErrorCatcher implements LoggerInterface
 {
-    public const string VERSION = '0.8.3';
+    public const string VERSION = '0.8.5';
 
     public const string LEVEL_DEBUG = 'debug',
         LEVEL_TIME = 'time',

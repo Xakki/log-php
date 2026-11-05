@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xakki\PhpErrorCatcher;
+namespace Xakki\Log\Php;
 
 use Exception;
 
@@ -252,6 +252,7 @@ class Tools
     public static function isTraceHasExclude(array $traceItem, array $exclude): bool
     {
         $exclude[] = 'phperrorcatcher';
+        $exclude[] = 'log-php';
         return self::containExclude((string) ($traceItem['file'] ?? $traceItem['class'] ?? ''), $exclude);
     }
 
